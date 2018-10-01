@@ -9,7 +9,9 @@
     <TextView
         android:id="@+id/text_Heading"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_Article"

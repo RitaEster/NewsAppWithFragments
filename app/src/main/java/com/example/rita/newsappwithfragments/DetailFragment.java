@@ -39,7 +39,7 @@ public class DetailFragment extends Fragment {
             heading.setText (News.getHeadline(detailId));
 
             TextView article = (TextView) view.findViewById(R.id.text_Article);
-            heading.setText (News.getArticle(detailId));
+            article.setText (News.getArticle(detailId));
         }
     }
 

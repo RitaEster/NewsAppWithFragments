@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/fragment_news_list"
         android:name="com.example.rita.newsappwithfragments.NewsListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
