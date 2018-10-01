@@ -21,6 +21,14 @@ public class DetailFragment extends Fragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null){
+            detailId = savedInstanceState.getInt("detailId");
+        }
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -42,6 +50,12 @@ public class DetailFragment extends Fragment {
             article.setText (News.getArticle(detailId));
         }
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        savedInstanceState.putInt("detailId", detailId);
+    }
+
 
     public void setDetailId(int id){
         detailId = id;
